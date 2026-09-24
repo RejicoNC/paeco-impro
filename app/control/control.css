@@ -49,6 +49,12 @@ p, label, input, select, button, span {
     font-size: var(--fz-body);
 }
 
+/* Les champs de formulaire n'héritent pas de la police par défaut : sans ceci, ils utilisent la police système
+   de l'OS (rendue en rectangles « ? » sur macOS Tahoe avec les anciennes versions d'Electron). */
+input, select, textarea {
+    font-family: inherit;
+}
+
 .hidden {
     display: none !important;
 }
