@@ -5,6 +5,23 @@ interface « contrôleur » pour le régisseur et une interface « projecteur »
 les manches, le chronomètre et les scores, tandis que l'affichage projecteur synchronisé retransmet en direct les
 informations importantes.
 
+## Téléchargement
+
+Dernière version : **https://github.com/RejicoNC/paeco-impro/releases/latest**
+
+- **macOS** (Intel et Apple Silicon) : fichier `.dmg`. L'application n'est pas signée par Apple : au premier lancement,
+  faire clic droit sur l'app > **Ouvrir**, ou **Réglages > Confidentialité et sécurité > Ouvrir quand même**.
+  Si macOS indique que l'app est « endommagée », exécuter dans le Terminal :
+  `xattr -cr "/Applications/Paeco Impro.app"`.
+- **Windows** : fichier `.exe` (installeur). Si SmartScreen bloque, cliquer sur **Informations complémentaires >
+  Exécuter quand même**.
+
+Pour mettre à jour, télécharger la nouvelle version et la réinstaller par-dessus : la session et les équipes sont
+conservées.
+
+Pour publier une nouvelle version : passer `version` dans `package.json`, committer, puis pousser un tag `vX.Y.Z`
+(`git tag v1.2.0 && git push origin v1.2.0`). Le workflow `Release` compile et publie les installeurs.
+
 ## Documentation
 
 - [Guide d'exploitation](docs/guide-exploitation.md) : routine régie avant, pendant et après un spectacle.

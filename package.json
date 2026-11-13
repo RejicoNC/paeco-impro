@@ -1,6 +1,6 @@
 {
   "name": "impro-multijoueur",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Jeu d'impro multijoueur (contrôleur + projecteur) en Electron",
   "author": "Bruce Raillard",
   "license": "MIT",
